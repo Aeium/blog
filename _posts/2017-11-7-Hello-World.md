@@ -15,6 +15,8 @@ Wolframs experiment goes the other direction. What is the simplest possible agen
 
 In Wolframs experiment, the agents cannot move. Their entire world is just a one dimensional array of cells, like one row of keys on a keyboard. The action each cell can perform is very limited. Each cell is locked in place, but each has a light that it can turn on or off.
 
+![_config.yml]({{ site.baseurl }}/images/cell cartoon.png)
+
 The perception of each cell is very limited as well. It can see it’s neighbor to the left, it’s neighbor to the right, and itself. For each cell nothing else is visible, and it has no memory besides it’s ability to see wether it’s own light is current off or on.
 
 This means, with three inputs combined, each cell can only have 8 possible experiences. Every binary number 0-7 corresponds directly to a state of the world our little cell might see. Maybe all three cells are dark, maybe all three cells are lit, or maybe something in between, whatever might occur, it must be one of 8 possibilities.
