@@ -21,7 +21,7 @@ Instead lets just make the registry file ourselves, this will give us an oppertu
 
 This is the file that I used, in plain text:
 
-``
+```text
 Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\.py]
@@ -35,7 +35,7 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Python]
 @="Python Script"
-``
+```
 
 I got it from utapyngo's answer in this stackOverflow page: https://stackoverflow.com/questions/19758455/how-do-i-add-a-new-python-script-option-to-the-context-menu
 
