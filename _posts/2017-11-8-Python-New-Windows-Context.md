@@ -21,8 +21,6 @@ Instead lets just make the registry file ourselves, this will give us an opportu
 
 This is the file that I used, in plain text:
 
-Windows Registry Editor Version 5.00
-
 ```text
 Windows Registry Editor Version 5.00
 
