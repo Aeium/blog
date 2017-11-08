@@ -7,7 +7,7 @@ Python feels particularly at home on Linux. There are many reasons for this and 
 
 Personally, the work that I do is split between Windows and Linux systems, so it's nice to streamline the Python experience in Windows where I can, so it's not so jarring for me dropping into a Windows system from a Linux one.
 
-If you don't already have Python on your Windows computer, I reccomend installing an Anaconda distribution. There is a good guide for that here: https://medium.com/@GalarnykMichael/install-python-on-windows-anaconda-c63c7c3d1444
+If you don't already have Python on your Windows computer, I reccomend installing an Anaconda distribution. There is a good guide for that here: [link](https://medium.com/@GalarnykMichael/install-python-on-windows-anaconda-c63c7c3d1444)
 
 So, now we have Python on the machine. But how do we make a script? What I wanted is a "New Python Script" option in the windows explorer context menu.
 
@@ -37,7 +37,7 @@ Windows Registry Editor Version 5.00
 @="Python Script"
 ```
 
-I got it from utapyngo's answer in this stackOverflow page: https://stackoverflow.com/questions/19758455/how-do-i-add-a-new-python-script-option-to-the-context-menu
+I got it from utapyngo's answer in this stackOverflow page: [link](https://stackoverflow.com/questions/19758455/how-do-i-add-a-new-python-script-option-to-the-context-menu)
 
 Just copy that text into the clipboard and open Notepad.
 
@@ -46,6 +46,8 @@ Paste the text into Notepad and save as myRegEdit.reg
 Give it a look. To me this file looks pretty harmless, no weird urls, no ports opened, nothing like that. But it's your registry and I am not nescesarily a security expert, so this part is up to you.
 
 One we are ok with this registry change, we are ready to save and execute it. Go to File > Save As...  Set the file type to "all files" and save as "myRegEdit.reg". Save it somewhere you can find it, it doesn't really matter where.
+
+![_config.yml]({{ site.baseurl }}/images/17-11-8/1.png)
 
 Execute the .reg file. You are almost done! Reboot the computer.
 
