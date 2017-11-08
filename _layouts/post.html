@@ -12,6 +12,16 @@ layout: default
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
+  
+    <!-- Stuff for jsarr tag  -->
+
+    {% for js in page.jsarr %}
+      <script type="text/javascript">
+	{% include {{ js }} %}
+      </script>
+    {% endfor %}
+
+      <!-- End Stuff for jsarr tag  -->
 
   {% include disqus.html %}
 </article>
