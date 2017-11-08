@@ -21,7 +21,10 @@ The perception of each cell is very limited as well. It can see it’s neighbor 
 
 This means, with three inputs combined, each cell can only have 8 possible experiences. Every binary number 0-7 corresponds directly to a state of the world our little cell might see. Maybe all three cells are dark, maybe all three cells are lit, or maybe something in between, whatever might occur, it must be one of 8 possibilities.
 
-![_config.yml]({{ site.baseurl }}/images/comp2.png)
+![_config.yml]({{ site.baseurl }}/images/17-11-1-1.png)
+![_config.yml]({{ site.baseurl }}/images/17-11-1-2.png)
+![_config.yml]({{ site.baseurl }}/images/17-11-1-3.png)
+![_config.yml]({{ site.baseurl }}/images/17-11-1-4.png)
 
 Here we can see the 8 possible neigboorhoods. Why not label them 1 - 8? It's a stylistic choice. This way it may be confusing that the last one is labeled #7 when there are eight of them, but it has the distinct advantage that the labels match the binary number you get by directly reading the cells as binary bits.
 
