@@ -23,7 +23,7 @@ This means, with three inputs combined, each cell can only have 8 possible exper
 
 ![_config.yml]({{ site.baseurl }}/images/comp2.png)
 
-Here we can see the 8 possible neigboorhoods. Why not label them 1 - 8? It's a stylistic choice. This way it may be confusing that the last one is labeled #7 when there are eight of them, but it has the advantage that the labels match the binary number you get by reating the cells as bits.
+Here we can see the 8 possible neigboorhoods. Why not label them 1 - 8? It's a stylistic choice. This way it may be confusing that the last one is labeled #7 when there are eight of them, but it has the distinct advantage that the labels match the binary number you get by directly reading the cells as binary bits.
 
 With only 8 possible experiences for our agent, and two possible actions, it becomes feasible to define a policy that will completely describe its behavior. If we assign one action for each state or experience, it only takes 8 of those assignments, to completely describe its behavior.
 
