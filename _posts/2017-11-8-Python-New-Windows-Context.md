@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding Python to Windows "New" Explorer Context
+title: Adding Python to Windows Explorer "New" Context
 ---
 
 Python feels particularly at home on Linux. There are many reasons for this and that is not really the topic of this post.
