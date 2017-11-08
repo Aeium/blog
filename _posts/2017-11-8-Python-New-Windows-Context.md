@@ -7,7 +7,7 @@ Python feels particularly at home on Linux. There are many reasons for this and 
 
 Personally, the work that I do is split between Windows and Linux systems, so it's nice to streamline the Python experience in Windows where I can, so it's not so jarring for me dropping into a Windows system from a Linux one.
 
-If you don't already have Python on your Windows computer, I reccomend installing an Anaconda distribution. There is a good guide for that here: [link](https://medium.com/@GalarnykMichael/install-python-on-windows-anaconda-c63c7c3d1444)
+If you don't already have Python on your Windows computer, I recommend installing an Anaconda distribution. There is a good guide for that here: [link](https://medium.com/@GalarnykMichael/install-python-on-windows-anaconda-c63c7c3d1444)
 
 So, now we have Python on the machine. But how do we make a script? What I wanted is a "New Python Script" option in the windows explorer context menu.
 
@@ -15,11 +15,13 @@ So, now we have Python on the machine. But how do we make a script? What I wante
 
 This will streamline things and help make Python seem more at home on Windows.
 
-It will require a few additons to the registry. The easiest way to do this is to make a .reg file. I could fairly easily host the .reg file I used and offer it for download, but even if you trust me it is probablty not good security practice to download and execute registry edits from the internet. Seems sort of sketchy.
+It will require a few additions to the registry. The easiest way to do this is to make a .reg file. I could fairly easily host the .reg file I used and offer it for download, but even if you trust me it is probably not good security practice to download and execute registry edits from the internet. Seems sort of sketchy.
 
-Instead lets just make the registry file ourselves, this will give us an oppertunity to at least give the .reg file a look and check for stuff that looks malicous.
+Instead lets just make the registry file ourselves, this will give us an opportunity to at least give the .reg file a look and check for stuff that looks malicious.
 
 This is the file that I used, in plain text:
+
+Windows Registry Editor Version 5.00
 
 ```text
 Windows Registry Editor Version 5.00
@@ -43,9 +45,9 @@ Just copy that text into the clipboard and open Notepad.
 
 Paste the text into Notepad.
 
-Give it a look. To me this file looks pretty harmless, no weird urls, no ports opened, nothing like that. But it's your registry and I am not nescesarily a security expert, so this part is up to you.
+Give it a look. To me this file looks pretty harmless, no weird URL, no ports opened, nothing like that. But it's your registry and I am not necessarily a security expert, so this part is up to you.
 
-One we are ok with this registry change, we are ready to save and execute it. Go to File > Save As...  Set the file type to "all files" and save as "myRegEdit.reg". Save it somewhere you can find it, it doesn't really matter where.
+One we are ok with this registry change, we are ready to save and execute it. Go to File > Save As... Set the file type to "all files" and save as "myRegEdit.reg". Save it somewhere you can find it, it doesn't really matter where.
 
 ![_config.yml]({{ site.baseurl }}/images/17-11-8/1.png)
 
