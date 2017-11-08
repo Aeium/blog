@@ -41,7 +41,7 @@ I got it from utapyngo's answer in this stackOverflow page: [link](https://stack
 
 Just copy that text into the clipboard and open Notepad.
 
-Paste the text into Notepad and save as myRegEdit.reg
+Paste the text into Notepad.
 
 Give it a look. To me this file looks pretty harmless, no weird urls, no ports opened, nothing like that. But it's your registry and I am not nescesarily a security expert, so this part is up to you.
 
