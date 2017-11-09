@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Wolfram's Automata, Atoms of Complexity
+jsarr:
+- javascript/17-11-7/elementary_autos.js
+categories: Javascript
 ---
 
 Cellular Automata are really amazing things. The best introduction to Cellular Automata in my opinion is the story of Stephen Wolfram and the rule 30 automaton. It goes like this:
