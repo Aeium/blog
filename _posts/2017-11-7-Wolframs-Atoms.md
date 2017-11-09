@@ -43,8 +43,8 @@ Now that we understand the relationship between the rule and one cell i.e. one a
 
 And what dynamics are possible? As one might expect, some rules produce lines, pyramids, or even repeating geometric patterns like Sierpinski's triangle. But they exhibit some very unexpected behavior as well. Chaotic behavior, noise, and turbulence. Dynamic balances between chaos and order. True and unlimited complexity.
 
-<style type="text/css">
-      #myCanvas {
+<style>
+      myCanvas {
       width: 1024px;
       height: 768px;
       border: 1px solid lightgray;
