@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding Python to Windows "New" Explorer Context
+title: Adding Python to Windows Explorer "New" Context
 ---
 
 Python feels particularly at home on Linux. There are many reasons for this and that is not really the topic of this post.
@@ -20,8 +20,6 @@ It will require a few additions to the registry. The easiest way to do this is t
 Instead lets just make the registry file ourselves, this will give us an opportunity to at least give the .reg file a look and check for stuff that looks malicious.
 
 This is the file that I used, in plain text:
-
-Windows Registry Editor Version 5.00
 
 ```text
 Windows Registry Editor Version 5.00
