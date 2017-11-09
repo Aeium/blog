@@ -40,6 +40,8 @@ Now that we understand the relationship between the rule and one cell i.e. one a
 
 And what dynamics are possible? As one might expect, some rules produce lines, pyramids, or even repeating geometric patterns like Sierpinski's triangle. But they exhibit some very unexpected behavior as well. Chaotic behavior, noise, and turbulence. Dynamic balances between chaos and order. True and unlimited complexity.
 
+<canvas id="myCanvas" width=1024%; height= 768%; style="border:1px solid #d3d3d3;">
+
 When he first saw the turbulent chaos of rule 30, Wolfram was shocked. He only expected to find simple patterns produced by the simple 8 bit rules. Perhaps there was some error? But it was a simple matter to look up the rule and verify the pattern by hand. The 8 bit rule 30 truly does produce this turbulence.
 
  Most people would have been surprised, in fact many people are still surprised because it challenges a basic assumption about the nature of turbulence. The conventional wisdom is that the turbulent phenomena magnify existing turbulence that is already there but at a smaller scale. So the force of a wing through the air might provoke a mess of air currents, but all of this just represents a previous mess of brownian motion that has been amplified. Nevertheless, a conventional understanding would infer that causal continuity exists between large scale features of some turbulent system and smaller features of the microscopic dynamics that existed previously.
