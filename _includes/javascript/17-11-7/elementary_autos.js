@@ -239,7 +239,7 @@ function drawbit(x, y, bit){
 
     ctx.fillStyle = '#000';
     ctx.fillRect(x, y, 16, 16);
-    if (bit == 0){
+    if (bit == 1){
         ctx.fillStyle = '#fff';
         ctx.fillRect(x+2, y+2, 12, 12);
 	}
@@ -251,7 +251,7 @@ function drawbitRed(x, y, bit){
 
     ctx.fillStyle = '#f00';
     ctx.fillRect(x, y, 16, 16);
-    if (bit == 0){
+    if (bit == 1){
         ctx.fillStyle = '#fff';
     }
     else {
