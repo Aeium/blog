@@ -41,9 +41,9 @@ When contrasting rule 29 with rule 30, for example, it is simply easier to say â
 
 Now that we understand the relationship between the rule and one cell i.e. one agent, the true objective of Wolfram's experiment can come into focus. There is nothing particularly interesting about the behavior of one agent with any specific 8 bit rule. But the purpose of this experiment is to observe the behavior of an ensemble of agents all operating in tandem not just one. To see what dynamics are present across the entire set of all 256 rules, not just any one rule in a particular.
 
-And what dynamics are possible? As one might expect, some rules produce lines, pyramids, or even repeating geometric patterns like Sierpinski's triangle. But they exhibit some very unexpected behavior as well. Chaotic behavior, noise, and turbulence. Dynamic balances between chaos and order. True and unlimited complexity.
-
 <canvas id="myCanvas" width="768" height="768"></canvas>
+
+Graphing the automation over time we can draw an image that shows the behavior of each rule. Each row of the image is the same row of cells, but the columns show how those cells change state over time. Some rules produce lines, pyramids, or even repeating geometric patterns like Sierpinski's triangle. But they exhibit some very unexpected behavior as well. Chaotic behavior, noise, and turbulence. Dynamic balances between chaos and order. True and unlimited complexity.
 
 When he first saw the turbulent chaos of rule 30, Wolfram was shocked. He only expected to find simple patterns produced by the simple 8 bit rules. Perhaps there was some error? But it was a simple matter to look up the rule and verify the pattern by hand. The 8 bit rule 30 truly does produce this turbulence.
 
