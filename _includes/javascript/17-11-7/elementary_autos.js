@@ -1,3 +1,4 @@
+
 /*
 Copyright 2017 Nathan Epstein
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -609,7 +610,7 @@ function flipStartBit(bit){
 var canvasLeft = canvas.offsetLeft;
 var canvasTop  = canvas.offsetTop;
 
-document.getElementById("container").addEventListener('click', function(event) {
+document.getElementById("myCanvas").addEventListener('click', function(event) {
 	
     var pixX = event.pageX - canvasLeft;
     var pixY = event.pageY - canvasTop;
@@ -683,9 +684,9 @@ document.getElementById("container").addEventListener('click', function(event) {
 document.onkeydown = function(e) {
     switch (e.keyCode) {
         case 37:
-            retX = mod(retX - 1, 256);
+            retX = mod(retX - 1, 16);
             drawReticule(retX, retY);
-            var rule = retX + (retY * 256);
+            var rule = retX + (retY * 16);
             var bitArray = getBitArray(rule);
 			drawAuto(rule, false);
 			drawTextBG(ctx, 'Rule ' + rule.toString() + '         ', '32px arial', 40, 30 );
@@ -698,9 +699,9 @@ document.onkeydown = function(e) {
 			xhttp.send();
             break;
         case 38:
-            retY = mod(retY - 1, 256);
+            retY = mod(retY - 1, 16);
             drawReticule(retX, retY);
-            var rule = retX + (retY * 256);
+            var rule = retX + (retY * 16);
             var bitArray = getBitArray(rule);
 			drawAuto(rule, false);
 			drawTextBG(ctx, 'Rule ' + rule.toString() + '         ', '32px arial', 40, 30 );
@@ -713,9 +714,9 @@ document.onkeydown = function(e) {
 			xhttp.send();
             break;
         case 39:
-            retX = mod(retX + 1, 256);
+            retX = mod(retX + 1, 16);
             drawReticule(retX, retY);
-            var rule = retX + (retY * 256);
+            var rule = retX + (retY * 16);
             var bitArray = getBitArray(rule);
 			drawAuto(rule, false);
 			drawTextBG(ctx, 'Rule ' + rule.toString() + '         ', '32px arial', 40, 30 );
@@ -728,9 +729,9 @@ document.onkeydown = function(e) {
 			xhttp.send();
             break;
         case 40:
-            retY = mod(retY + 1, 256);
+            retY = mod(retY + 1, 16);
             drawReticule(retX, retY);
-            var rule = retX + (retY * 256);
+            var rule = retX + (retY * 16);
             var bitArray = getBitArray(rule);
 			drawAuto(rule, false);
 			drawTextBG(ctx, 'Rule ' + rule.toString() + '         ', '32px arial', 40, 30 );
@@ -743,7 +744,7 @@ document.onkeydown = function(e) {
 			xhttp.send();
             break;
         case 32:
-            var rule = retX + (retY * 256);
+            var rule = retX + (retY * 16);
             var bitArray = getBitArray(rule);
             drawAuto(rule, true);
 			drawTextBG(ctx, 'Rule ' + rule.toString() + '         ', '32px arial', 40, 30 );
@@ -759,7 +760,7 @@ document.onkeydown = function(e) {
     }
 }
 
-
+console.log(startRule)
 
 //drawBackground();
 
@@ -770,8 +771,8 @@ if(startRule != -1){
 			drawTextBG(ctx, 'Rule ' + rule.toString() + '         ', '32px arial', 40, 30 );
             //showRules(ctx, rule, 0,0);
 	        drawStarts(160, 0, bitArray);
-            xhttp.open("GET", "autolog1.asp?rule=" + 'Rule' + rule.toString(), true);
-			xhttp.send();
+            //xhttp.open("GET", "autolog1.asp?rule=" + 'Rule' + rule.toString(), true);
+			//xhttp.send();
 }
 
 if( rule != -1){
@@ -786,4 +787,3 @@ else{
 //    ctx2.drawImage(img, 0, 0, img.width, img.height, 0, 0, canvas2.width, canvas2.height);
 //}
 //drawAuto(11155);
-
