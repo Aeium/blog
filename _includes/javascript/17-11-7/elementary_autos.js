@@ -612,11 +612,16 @@ var canvasTop  = canvas.offsetTop;
 
 document.getElementById("myCanvas").addEventListener('click', function(event) {
 	
+	console.log("is this working at all")
+	
     var pixX = event.pageX - canvasLeft;
     var pixY = event.pageY - canvasTop;
 	
 	var pixX3 = event.pageX - canvasLeft;
 	var pixY3 = event.pageY - canvasTop - 668;
+	
+	//console.log(pixX3)
+	//console.log(pixY3)
 	
 	console.log(pixX3);
 	console.log(pixY3);
@@ -633,7 +638,7 @@ document.getElementById("myCanvas").addEventListener('click', function(event) {
 		
 		}
 		
-        var position = retX + (retY * 256);
+        var position = retX + (retY * 16);
         console.log("click on main canvas")
         drawAuto(position, false);
         //var urlString = "/map/bw/" + position.toString() + "/" + BitArraytob64(startArray);
@@ -650,30 +655,37 @@ document.getElementById("myCanvas").addEventListener('click', function(event) {
 	
 	if(pixY3 >= 60 && pixY3 <= 76){
 
-        pixX3 = pixX3 - 200;
-        if((pixX3 % 100) < 16){
+        pixX3 = pixX3 - 234;
+        if((pixX3 % 70) < 16){
 		
-            flipBit(retX, retY, Math.floor(pixX3 / 100));
-		
+			if(pixX3/70 > 0){
+				flipBit(retX, retY, Math.floor(pixX3 / 70));
+			}
 		}
 	
 	}
 
     if(pixY3 >= 38 && pixY3 <= 54){
 
-        pixX3 = pixX3 - 200;
-        if((pixX3 % 100) < 16){
+        pixX3 = pixX3 - 234;
+		
+		console.log(pixX3 / 70)
+        if((pixX3 % 70) < 16){
         
-            var target = Math.floor(pixX3 / 100);
-            //flipBit(retX, retY, Math.floor(pixX3 / 100));
-            var rule = retX + (retY * 256);
-            var bitArray = getBitArray(rule);
-            highlightArray[target] = ( highlightArray[target] + 1 ) % 2;
-            drawAuto(rule, false);
-            //showRules(ctx, rule, 0,0);
-            drawTextBG(ctx, 'Rule ' + rule.toString() + '         ', '32px arial', 40, 30 );
-            drawStarts(160, 0, bitArray);
-
+			if(pixX3/70 > 0){
+				var target = Math.floor(pixX3 / 70);
+				//flipBit(retX, retY, Math.floor(pixX3 / 100));
+				var rule = retX + (retY * 16);
+				var bitArray = getBitArray(rule);
+				highlightArray[target] = ( highlightArray[target] + 1 ) % 2;
+				
+				console.log(highlightArray)
+				
+				drawAuto(rule, false);
+				//showRules(ctx, rule, 0,0);
+				drawTextBG(ctx, 'Rule ' + rule.toString() + '         ', '32px arial', 40, 30 );
+				drawStarts(160, 0, bitArray);
+			}
         }
     
     }
