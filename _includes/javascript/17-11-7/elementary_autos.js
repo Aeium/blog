@@ -310,14 +310,14 @@ function drawStarts(x, y, bitarray, highlightArrayL = highlightArray){
 	x = x + 35
 	
     drawSet( x+0, y+25, 0 ,bitarray[0],  highlightArrayL[0]);
-    drawSet(x+100,y+25,1, bitarray[1],   highlightArrayL[1]);
-    drawSet(x+200,y+25,2, bitarray[2],   highlightArrayL[2]);
-    drawSet(x+300,y+25,3, bitarray[3],   highlightArrayL[3]);
+    drawSet(x+70,y+25,1, bitarray[1],   highlightArrayL[1]);
+    drawSet(x+140,y+25,2, bitarray[2],   highlightArrayL[2]);
+    drawSet(x+210,y+25,3, bitarray[3],   highlightArrayL[3]);
     
-	drawSet(x+400,y+25,4, bitarray[4],  highlightArrayL[4]);
-    drawSet(x+500,y+25,5, bitarray[5],  highlightArrayL[5]);
-    drawSet(x+600,y+25,6, bitarray[6],  highlightArrayL[6]);
-    drawSet(x+700,y+25,7, bitarray[7],  highlightArrayL[7]);
+	drawSet(x+280,y+25,4, bitarray[4],  highlightArrayL[4]);
+    drawSet(x+350,y+25,5, bitarray[5],  highlightArrayL[5]);
+    drawSet(x+420,y+25,6, bitarray[6],  highlightArrayL[6]);
+    drawSet(x+490,y+25,7, bitarray[7],  highlightArrayL[7]);
 	
 	
     //ctx3.fillStyle = '#000';
@@ -694,9 +694,9 @@ document.onkeydown = function(e) {
 	        drawStarts(160, 0, bitArray);
 
             var urlString = "/map/bw/" + 'Rule' + rule.toString() + "/" + BitArraytob64(startArray);
-            window.history.pushState( null, null, urlString);
-            xhttp.open("GET", "autolog1.asp?rule=" + 'Rule' + rule.toString(), true);
-			xhttp.send();
+            //window.history.pushState( null, null, urlString);
+            //xhttp.open("GET", "autolog1.asp?rule=" + 'Rule' + rule.toString(), true);
+			//xhttp.send();
             break;
         case 38:
             retY = mod(retY - 1, 16);
@@ -709,9 +709,9 @@ document.onkeydown = function(e) {
 	        drawStarts(160, 0, bitArray);
 
             var urlString = "/map/bw/" + 'Rule' + rule.toString() + "/" + BitArraytob64(startArray);
-            window.history.pushState( null, null, urlString);
-            xhttp.open("GET", "autolog1.asp?rule=" + 'Rule' + rule.toString(), true);
-			xhttp.send();
+            //window.history.pushState( null, null, urlString);
+            //xhttp.open("GET", "autolog1.asp?rule=" + 'Rule' + rule.toString(), true);
+			//xhttp.send();
             break;
         case 39:
             retX = mod(retX + 1, 16);
@@ -724,9 +724,9 @@ document.onkeydown = function(e) {
 	        drawStarts(160, 0, bitArray);
 
             var urlString = "/map/bw/" + 'Rule' + rule.toString() + "/" + BitArraytob64(startArray);
-            window.history.pushState( null, null, urlString);
-            xhttp.open("GET", "autolog1.asp?rule=" + 'Rule' + rule.toString(), true);
-			xhttp.send();
+            //window.history.pushState( null, null, urlString);
+            //xhttp.open("GET", "autolog1.asp?rule=" + 'Rule' + rule.toString(), true);
+			//xhttp.send();
             break;
         case 40:
             retY = mod(retY + 1, 16);
@@ -739,9 +739,9 @@ document.onkeydown = function(e) {
 	        drawStarts(160, 0, bitArray);
 
             var urlString = "/map/bw/" + 'Rule' + rule.toString() + "/" + BitArraytob64(startArray);
-            window.history.pushState( null, null, urlString);
-            xhttp.open("GET", "autolog1.asp?rule=" + 'Rule' + rule.toString(), true);
-			xhttp.send();
+            //window.history.pushState( null, null, urlString);
+            //xhttp.open("GET", "autolog1.asp?rule=" + 'Rule' + rule.toString(), true);
+			//xhttp.send();
             break;
         case 32:
             var rule = retX + (retY * 16);
@@ -753,9 +753,9 @@ document.onkeydown = function(e) {
 
             var urlString = "/map/bw/" + 'Rule' + rule.toString() + "/" + BitArraytob64(startArray);
 
-            window.history.pushState( null, null, urlString);
-            xhttp.open("GET", "autolog2.asp?rule=" + 'Rule' + rule.toString(), true);
-			xhttp.send();
+            //window.history.pushState( null, null, urlString);
+            //xhttp.open("GET", "autolog2.asp?rule=" + 'Rule' + rule.toString(), true);
+			//xhttp.send();
 			
     }
 }
