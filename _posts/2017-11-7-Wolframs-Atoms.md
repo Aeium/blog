@@ -33,6 +33,8 @@ Here we can see the 8 possible neigboorhoods. Why not label them 1 - 8? It's a s
 
 With only 8 possible experiences for our agent, and two possible actions, it becomes feasible to define a policy that will completely describe its behavior. If we assign one action for each state or experience, it only takes 8 of those assignments, to completely describe its behavior.
 
+![_config.yml]({{ site.baseurl }}/images/agent_think.png)
+
 This means that for our agent, if we start with an 8 bit number, we can break that number down bit by bit and completely derive the policy. Wolfram called these 8 bit numbers the “rules”, and there are as many rules as there are 8 bit numbers. 256 rules.
 
 Some people find this confusing to call this number the singular “rule”, because technically each rule is a set of 8 sub-rules. One sub-rule from each bit mapped to each possible environment. The 8 bit number is called a rule, not for a technical reason, but because with our experiment we intend to study many different sets of rules, not just one.
