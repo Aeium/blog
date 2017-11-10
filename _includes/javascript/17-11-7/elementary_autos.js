@@ -431,7 +431,7 @@ function get6BitArray(num){
 /// expand with color, background etc.
 function drawTextBG(ctx, txt, font, x, y) {
 
-    y = y + 668
+    y = y + 658
 
     /// lets save current state as we make a lot of changes        
     ctx.save();
@@ -578,12 +578,12 @@ function flipBit(retXin, retYin, bit){
         var rule = retXin + (retYin * 256);
         var bitArray = getBitArray(rule);
         
-        console.log("flipping bit")
-		console.log("bit: " + bit.toString() +" rule 1: " + 'Rule' + rule.toString());
+        //console.log("flipping bit")
+		//console.log("bit: " + bit.toString() +" rule 1: " + 'Rule' + rule.toString());
 		
 		rule = rule + (2**(bit) * bitArray[bit] * -1) + (2**(bit) * ((bitArray[bit]+1) %2 ));  // to flip bit, subtract if 1, add if 0
 
-        console.log("rule2: " + 'Rule' + rule.toString());
+        //console.log("rule2: " + 'Rule' + rule.toString());
 		
         bitArray = getBitArray(rule);
 		
@@ -591,7 +591,7 @@ function flipBit(retXin, retYin, bit){
         retY = Math.floor(rule/256);
         drawReticule(retX, retY);
         drawAuto(rule);
-	    drawTextBG(ctx, 'Rule' + rule.toString() + '         ', '32px arial', 40, 30 );
+	    drawTextBG(ctx, 'Rule ' + rule.toString() + '         ', '32px arial', 40, 30 );
 
         //var urlString = "/map/bw/" + 'Rule' + rule.toString() + "/" + BitArraytob64(startArray);
         //window.history.pushState( null, null, urlString);
@@ -684,6 +684,7 @@ document.getElementById("myCanvas").addEventListener('click', function(event) {
 				drawAuto(rule, false);
 				//showRules(ctx, rule, 0,0);
 				drawTextBG(ctx, 'Rule ' + rule.toString() + '         ', '32px arial', 40, 30 );
+				//drawTextBG(ctx, 'try clicking! →', '14px arial', 140, 72 );
 				drawStarts(160, 0, bitArray);
 			}
         }
@@ -702,10 +703,11 @@ document.onkeydown = function(e) {
             var bitArray = getBitArray(rule);
 			drawAuto(rule, false);
 			drawTextBG(ctx, 'Rule ' + rule.toString() + '         ', '32px arial', 40, 30 );
+			drawTextBG(ctx, 'try clicking! →', '14px arial', 140, 72 );
             //showRules(ctx, rule, 0,0);
 	        drawStarts(160, 0, bitArray);
 
-            var urlString = "/map/bw/" + 'Rule' + rule.toString() + "/" + BitArraytob64(startArray);
+            //var urlString = "/map/bw/" + 'Rule ' + rule.toString() + "/" + BitArraytob64(startArray);
             //window.history.pushState( null, null, urlString);
             //xhttp.open("GET", "autolog1.asp?rule=" + 'Rule' + rule.toString(), true);
 			//xhttp.send();
@@ -717,10 +719,11 @@ document.onkeydown = function(e) {
             var bitArray = getBitArray(rule);
 			drawAuto(rule, false);
 			drawTextBG(ctx, 'Rule ' + rule.toString() + '         ', '32px arial', 40, 30 );
+			drawTextBG(ctx, 'try clicking! →', '14px arial', 140, 72 );
             //showRules(ctx, rule, 0,0);
 	        drawStarts(160, 0, bitArray);
 
-            var urlString = "/map/bw/" + 'Rule' + rule.toString() + "/" + BitArraytob64(startArray);
+            //var urlString = "/map/bw/" + 'Rule ' + rule.toString() + "/" + BitArraytob64(startArray);
             //window.history.pushState( null, null, urlString);
             //xhttp.open("GET", "autolog1.asp?rule=" + 'Rule' + rule.toString(), true);
 			//xhttp.send();
@@ -732,10 +735,11 @@ document.onkeydown = function(e) {
             var bitArray = getBitArray(rule);
 			drawAuto(rule, false);
 			drawTextBG(ctx, 'Rule ' + rule.toString() + '         ', '32px arial', 40, 30 );
+			drawTextBG(ctx, 'try clicking! →', '14px arial', 140, 72 );
             //showRules(ctx, rule, 0,0);
 	        drawStarts(160, 0, bitArray);
 
-            var urlString = "/map/bw/" + 'Rule' + rule.toString() + "/" + BitArraytob64(startArray);
+            //var urlString = "/map/bw/" + 'Rule' + rule.toString() + "/" + BitArraytob64(startArray);
             //window.history.pushState( null, null, urlString);
             //xhttp.open("GET", "autolog1.asp?rule=" + 'Rule' + rule.toString(), true);
 			//xhttp.send();
@@ -747,10 +751,11 @@ document.onkeydown = function(e) {
             var bitArray = getBitArray(rule);
 			drawAuto(rule, false);
 			drawTextBG(ctx, 'Rule ' + rule.toString() + '         ', '32px arial', 40, 30 );
+			drawTextBG(ctx, 'try clicking! →', '14px arial', 140, 72 );
             //showRules(ctx, rule, 0,0);
 	        drawStarts(160, 0, bitArray);
 
-            var urlString = "/map/bw/" + 'Rule' + rule.toString() + "/" + BitArraytob64(startArray);
+            //var urlString = "/map/bw/" + 'Rule' + rule.toString() + "/" + BitArraytob64(startArray);
             //window.history.pushState( null, null, urlString);
             //xhttp.open("GET", "autolog1.asp?rule=" + 'Rule' + rule.toString(), true);
 			//xhttp.send();
@@ -760,10 +765,11 @@ document.onkeydown = function(e) {
             var bitArray = getBitArray(rule);
             drawAuto(rule, true);
 			drawTextBG(ctx, 'Rule ' + rule.toString() + '         ', '32px arial', 40, 30 );
+			drawTextBG(ctx, 'try clicking! →', '14px arial', 140, 72 );
             //showRules(ctx, rule, 0,0);
 	        drawStarts(160, 0, bitArray);
 
-            var urlString = "/map/bw/" + 'Rule' + rule.toString() + "/" + BitArraytob64(startArray);
+            //var urlString = "/map/bw/" + 'Rule' + rule.toString() + "/" + BitArraytob64(startArray);
 
             //window.history.pushState( null, null, urlString);
             //xhttp.open("GET", "autolog2.asp?rule=" + 'Rule' + rule.toString(), true);
@@ -781,6 +787,7 @@ if(startRule != -1){
             var bitArray = getBitArray(rule);
 			drawAuto(rule);
 			drawTextBG(ctx, 'Rule ' + rule.toString() + '         ', '32px arial', 40, 30 );
+			drawTextBG(ctx, 'try clicking! →', '14px arial', 140, 72 );
             //showRules(ctx, rule, 0,0);
 	        drawStarts(160, 0, bitArray);
             //xhttp.open("GET", "autolog1.asp?rule=" + 'Rule' + rule.toString(), true);
