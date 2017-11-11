@@ -37,9 +37,9 @@ With only 8 possible experiences for our agent, and two possible actions, it bec
 
 This means that for our agent, if we start with an 8 bit number, we can break that number down bit by bit and completely derive the policy. Wolfram called these 8 bit numbers the “rules”, and there are as many rules as there are 8 bit numbers. 256 rules.
 
-If we record cells over time, it's possible to draw a picture using the vertical access of the page to represent time passing. One way to think of it is the agents walking forward into a fresh set of cells, leaving a record behind them of what they have been up to.
-
 <iframe src='https://gfycat.com/ifr/ImmenseChiefBoaconstrictor' frameborder='0' scrolling='no' width='720' height='405' allowfullscreen></iframe>
+
+If we record cells over time, it's possible to draw a picture using the vertical access of the page to represent time passing. One way to think of it is the agents walking forward into a fresh set of cells, leaving a record behind them of what they have been up to.
 
 Some people find this confusing to call this number the singular “rule”, because technically each rule is a set of 8 sub-rules. One sub-rule from each bit mapped to each possible environment. The 8 bit number is called a rule, not for a technical reason, but because with our experiment we intend to study many different sets of rules, not just one.
 
