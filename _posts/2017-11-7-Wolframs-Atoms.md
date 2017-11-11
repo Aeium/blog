@@ -59,4 +59,4 @@ Rule 30 shows that these features of turbulence do not need to previously exist 
 
 Rule 30 proves this by counterexample. How could the chaotic behavior in this automation be described or caused by microscopic features that do not exist in this model?
 
-Cellular Automata like rule 30 or rule 110 seem to capture a very complex problem, but one that can be represented as the sum of many simple operations. This phenomena poses a challenge to reductionistic methods of science, because their secret remains elusive even though the agents involved in the pehenomea are completely described. A little fragment of natures hidden magic, working in binary and avalible on your computer screen.  
+Cellular Automata like rule 30 or rule 110 seem to capture a very complex problem, but one that can be represented as the sum of many simple operations. This phenomena poses a challenge to reductionistic methods of science, because their secret remains elusive even though the agents involved in the pehenomea are completely described. A little fragment of nature's hidden magic, working in binary and avalible on your computer screen.  
