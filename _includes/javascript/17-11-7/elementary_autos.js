@@ -612,21 +612,15 @@ var canvasTop  = canvas.offsetTop;
 
 document.getElementById("myCanvas").addEventListener('click', function(event) {
 	
-	console.log("is this working at all")
+	canvasLeft = canvas.offsetLeft;
+	canvasTop  = canvas.offsetTop;
 	
     var pixX = event.pageX - canvasLeft;
     var pixY = event.pageY - canvasTop;
 	
 	var pixX3 = event.pageX - canvasLeft;
 	var pixY3 = event.pageY - canvasTop - 668;
-	
-	//console.log(pixX3)
-	//console.log(pixY3)
-	
-	console.log(pixX3);
-	console.log(pixY3);
-    //console.log(X);
-	//console.log(Y);
+
 
     if(pixX >= 0 && pixX < cw && pixY >= 0 && pixY < ch){
 		
