@@ -33,7 +33,7 @@ ctx.fillText(text4, 10, 160);
 //var canvas3 = document.getElementById("myCanvas3");
 //var ctx3    = canvas3.getContext("2d");
 
-var startRule  = 110
+var startRule  = 30
 var startState = "None" 
 
 //console.log("wtf");
