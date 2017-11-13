@@ -37,11 +37,11 @@ With only 8 possible experiences for our agent, and two possible actions, it bec
 
 This means that for our agent, if we start with an 8 bit number, we can break that number down bit by bit and completely derive the policy. Wolfram called these 8 bit numbers the “rules”, and there are as many rules as there are 8 bit numbers. 256 rules.
 
+Some people find this confusing to call this number the singular “rule”, because technically each rule is a set of 8 sub-rules. One sub-rule from each bit mapped to each possible environment. The 8 bit number is called a rule, not for a technical reason, but because with our experiment we intend to study many different sets of rules, not just one.
+
 <iframe src='https://gfycat.com/ifr/FittingNiceHummingbird' frameborder='0' scrolling='no' width='720' height='405' allowfullscreen></iframe>
 
 If we record cells over time, it's possible to draw a picture using the horizontal space to show our cells, but also using vertical space to represent time passing. One way to think of it is the agents are walking forward or falling down into a fresh set of cells, leaving a record behind them of what they have been up to.
-
-Some people find this confusing to call this number the singular “rule”, because technically each rule is a set of 8 sub-rules. One sub-rule from each bit mapped to each possible environment. The 8 bit number is called a rule, not for a technical reason, but because with our experiment we intend to study many different sets of rules, not just one.
 
 When contrasting rule 29 with rule 30, for example, it is simply easier to say “rule” instead of Rule-set, even if the latter might be more technically accurate.
 
@@ -59,4 +59,4 @@ Rule 30 shows that these features of turbulence do not need to previously exist 
 
 Rule 30 proves this by counterexample. How could the chaotic behavior in this automation be described or caused by microscopic features that do not exist in this model?
 
-Cellular Automata like rule 30 or rule 110 seem to capture a very complex problem, but one that can be represented as the sum of many simple operations. This phenomenon poses a challenge to reductionistic methods of science. Many things about these Cellular Automata remains uknown even though the smaller parts involved are completely described. A little fragment of nature's hidden magic, working in binary and avalible on your computer screen.  
+Cellular Automata like rule 30 or rule 110 seem to capture a very complex problem, but one that can be represented as the sum of many simple operations. This phenomenon poses a challenge to reductionistic methods of science. Many things about these Cellular Automata remain uknown even though the smaller parts involved are completely described. A little fragment of nature's hidden magic, working in binary and avalible on your computer screen.  
