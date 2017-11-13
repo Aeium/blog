@@ -39,11 +39,11 @@ This means that for our agent, if we start with an 8 bit number, we can break th
 
 Some people find this confusing to call this number the singular “rule”, because technically each rule is a set of 8 sub-rules. One sub-rule from each bit mapped to each possible environment. The 8 bit number is called a rule, not for a technical reason, but because with our experiment we intend to study many different sets of rules, not just one.
 
+When contrasting rule 29 with rule 30, for example, it is simply easier to say “rule” instead of Rule-set, even if the latter might be more technically accurate.
+
 <iframe src='https://gfycat.com/ifr/FittingNiceHummingbird' frameborder='0' scrolling='no' width='720' height='405' allowfullscreen></iframe>
 
 If we record cells over time, it's possible to draw a picture using the horizontal space to show our cells, but also using vertical space to represent time passing. One way to think of it is the agents are walking forward or falling down into a fresh set of cells, leaving a record behind them of what they have been up to.
-
-When contrasting rule 29 with rule 30, for example, it is simply easier to say “rule” instead of Rule-set, even if the latter might be more technically accurate.
 
 Now that we understand the relationship between the rule and one cell i.e. one agent, the true objective of Wolfram's experiment can come into focus. There is nothing particularly interesting about the behavior of one agent with any specific 8 bit rule. But the purpose of this experiment is to observe the behavior of an ensemble of agents all operating in tandem not just one. To see what dynamics are present across the entire set of all 256 rules, not just any one rule in a particular.
 
