@@ -37,7 +37,7 @@ With only 8 possible experiences for our agent, and two possible actions, it bec
 
 This means that for our agent, if we start with an 8 bit number, we can break that number down bit by bit and completely derive the policy. Wolfram called these 8 bit numbers the “rules”, and there are as many rules as there are 8 bit numbers. 256 rules.
 
-<iframe src='https://gfycat.com/ifr/ImmenseChiefBoaconstrictor' frameborder='0' scrolling='no' width='720' height='405' allowfullscreen></iframe>
+<iframe src='https://gfycat.com/ifr/FittingNiceHummingbird' frameborder='0' scrolling='no' width='720' height='405' allowfullscreen></iframe>
 
 If we record cells over time, it's possible to draw a picture using the horizontal space to show our cells, but also using vertical space to represent time passing. One way to think of it is the agents are walking forward or falling down into a fresh set of cells, leaving a record behind them of what they have been up to.
 
