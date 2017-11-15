@@ -18,7 +18,7 @@ Wolfram's experiment goes the other direction. What is the simplest possible age
 
 In Wolfram's experiment, the agents cannot move. Their entire world is just one dimensional array of cells, like one row of keys on a keyboard. The action each cell can perform is very limited. Each cell is locked in place, but each has a light that it can turn on or off.
 
-![_config.yml]({{ site.baseurl }}/images/cell cartoon.png)
+![_config.yml]({{ site.baseurl }}/images/cell_cartoon.png)
 
 In addition. the perception of each cell is very limited. It can see it’s neighbor to the left, it’s neighbor to the right, and itself. For each cell nothing else is visible, and it has no memory besides it’s ability to see wether it’s own light is current off or on.
 
