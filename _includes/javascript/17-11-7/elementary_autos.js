@@ -309,15 +309,15 @@ function drawStarts(x, y, bitarray, highlightArrayL = highlightArray){
 
 	x = x + 35
 	
-    drawSet( x+0, y+25, 0 ,bitarray[0],  highlightArrayL[0]);
-    drawSet(x+70,y+25,1, bitarray[1],   highlightArrayL[1]);
-    drawSet(x+140,y+25,2, bitarray[2],   highlightArrayL[2]);
-    drawSet(x+210,y+25,3, bitarray[3],   highlightArrayL[3]);
+    drawSet( x+0, y+25, 7 ,bitarray[7],  highlightArrayL[7]);
+    drawSet(x+70,y+25,6, bitarray[6],   highlightArrayL[6]);
+    drawSet(x+140,y+25,5, bitarray[5],   highlightArrayL[5]);
+    drawSet(x+210,y+25,4, bitarray[4],   highlightArrayL[4]);
     
-	drawSet(x+280,y+25,4, bitarray[4],  highlightArrayL[4]);
-    drawSet(x+350,y+25,5, bitarray[5],  highlightArrayL[5]);
-    drawSet(x+420,y+25,6, bitarray[6],  highlightArrayL[6]);
-    drawSet(x+490,y+25,7, bitarray[7],  highlightArrayL[7]);
+	drawSet(x+280,y+25,3, bitarray[3],  highlightArrayL[3]);
+    drawSet(x+350,y+25,2, bitarray[2],  highlightArrayL[2]);
+    drawSet(x+420,y+25,1, bitarray[1],  highlightArrayL[1]);
+    drawSet(x+490,y+25,0, bitarray[0],  highlightArrayL[0]);
 	
 	
     //ctx3.fillStyle = '#000';
