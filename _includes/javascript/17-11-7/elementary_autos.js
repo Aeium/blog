@@ -653,7 +653,7 @@ document.getElementById("myCanvas").addEventListener('click', function(event) {
         if((pixX3 % 70) < 16){
 		
 			if(pixX3/70 > 0){
-				flipBit(retX, retY, Math.floor(pixX3 / 70));
+				flipBit(retX, retY, Math.floor(7 - (pixX3 / 70)));
 			}
 		}
 	
@@ -667,7 +667,7 @@ document.getElementById("myCanvas").addEventListener('click', function(event) {
         if((pixX3 % 70) < 16){
         
 			if(pixX3/70 > 0){
-				var target = Math.floor(pixX3 / 70);
+				var target = Math.floor(7 - (pixX3 / 70));
 				//flipBit(retX, retY, Math.floor(pixX3 / 100));
 				var rule = retX + (retY * 16);
 				var bitArray = getBitArray(rule);
