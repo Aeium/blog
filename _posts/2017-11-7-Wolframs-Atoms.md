@@ -16,11 +16,11 @@ Basically the idea is to encode a policy for an agent or cell in a simulation. D
 
 Wolfram's experiment goes the other direction. What is the simplest possible agent? What is the simplest possible state, and what can we learn by understanding the elementary pieces of this puzzle?
 
-In Wolfram's experiment, the agents cannot move. Their entire world is just one dimensional array of cells, like one row of keys on a keyboard. The action each cell can perform is very limited. Each cell is locked in place, but each has a light that it can turn on or off.
+In Wolfram's experiment, the agents cannot move. Their entire world is just one row of cells, like one row of keys on a keyboard. The action each cell can perform is very limited. Each cell is locked in place, but each has a light that it can turn on or off.
 
 ![_config.yml]({{ site.baseurl }}/images/cell_cartoon.png)
 
-In addition. the perception of each cell is very limited. It can see it’s neighbor to the left, it’s neighbor to the right, and itself. For each cell nothing else is visible, and it has no memory besides it’s ability to see wether it’s own light is current off or on.
+In addition. the perception of each cell is very limited. It can see its neighbor to the left, its neighbor to the right, and itself. For each cell nothing else is visible, and it has no memory besides its ability to see whether its own light is current off or on.
 
 This means with three inputs combined, each cell can only have 8 possible experiences. Every binary number 0-7 corresponds directly to a state of the world our little cell might see. Maybe all three cells are dark, maybe all three cells are lit, or maybe something in between. Whatever might occur, it must be one of 8 possibilities.
 
@@ -29,27 +29,29 @@ This means with three inputs combined, each cell can only have 8 possible experi
 ![_config.yml]({{ site.baseurl }}/images/17-11-1-3.png)
 ![_config.yml]({{ site.baseurl }}/images/17-11-1-4.png)
 
-Here we can see the 8 possible neigboorhoods. Why not label them 1 - 8? It's a stylistic choice. This way it may be confusing that the last one is labeled #7 when there are eight of them, but it has the distinct advantage that the labels match the binary number you get by directly reading the cells as binary bits.
+Here we can see the 8 possible neigborhoods. Why not label them 1 - 8? Its a stylistic choice. This way it may be confusing that the last one is labeled #7 when there are eight of them, but it has the distinct advantage that the labels match the binary number you get by directly reading the cells as binary bits.
 
-With only 8 possible experiences for our agent, and two possible actions, it becomes feasible to define a policy that will completely describe its behavior. If we assign one action for each state or experience, it only takes 8 of those assignments, to completely describe its behavior.
+With only 8 possible experiences for our agent, and two possible actions, it becomes feasible to define a policy that will completely describe its behavior. If we assign one action for each state or experience, it only takes 8 of those assignments to completely describe its behavior.
 
 ![_config.yml]({{ site.baseurl }}/images/agent_think.png)
 
-This means that for our agent, if we start with an 8 bit number, we can break that number down bit by bit and completely derive the policy. Wolfram called these 8 bit numbers the “rules”, and there are as many rules as there are 8 bit numbers. 256 rules.
+This means that for our agent, if we start with an 8-bit number, we can break that number down bit by bit and completely derive the policy. Wolfram called these 8 bit numbers the “rules”, and there are as many rules as there are 8 bit numbers. 256 rules.
 
 Some people find this confusing to call this number the singular “rule”, because technically each rule is a set of 8 sub-rules. One sub-rule from each bit mapped to each possible environment. The 8 bit number is called a rule, not for a technical reason, but because with our experiment we intend to study many different sets of rules, not just one.
 
-When contrasting rule 29 with rule 30, for example, it is simply easier to say “rule” instead of Rule-set, even if the latter might be more technically accurate.
+When contrasting rule 29 with rule 30, for example, it is simply easier to say “rule” instead of rule-set, even if the latter might be more technically accurate.
 
 <iframe src='https://gfycat.com/ifr/FittingNiceHummingbird' frameborder='0' scrolling='no' width='720' height='405' allowfullscreen></iframe>
 
 If we record cells over time, it's possible to draw a picture using the horizontal space to show our cells, but also using vertical space to represent time passing. One way to think of it is the agents are walking forward or falling down into a fresh set of cells, leaving a record behind them of what they have been up to.
 
-Now that we understand the relationship between the rule and one cell i.e. one agent, the true objective of Wolfram's experiment can come into focus. There is nothing particularly interesting about the behavior of one agent with any specific 8 bit rule. But the purpose of this experiment is to observe the behavior of an ensemble of agents all operating in tandem not just one. To see what dynamics are present across the entire set of all 256 rules, not just any one rule in a particular.
+Now that we understand the relationship between the rule and one cell, i.e., one agent, the true objective of Wolfram's experiment can come into focus. There is nothing particularly interesting about the behavior of one agent with any specific 8 bit rule. But the purpose of this experiment is to observe the behavior of an ensemble of agents all operating collectively, not just one. To see what dynamics are present across the entire set of all 256 rules, not just any one rule in a particular.
 
 <canvas id="myCanvas" width="768" height="768"></canvas>
 
-Graphing the automation over time we can draw an image that shows the behavior of each rule. Each row of the image is the same row of cells, but the columns show how those cells change state over time. Some rules produce lines, pyramids, or even repeating geometric patterns like Sierpinski's triangle. But they exhibit some very unexpected behavior as well. Chaotic behavior, noise, and turbulence. Dynamic balances between chaos and order. True and unlimited complexity.
+The initial row of cells at the top, red arrows, and policy for each neigborhood at the bottom are interactive. Try clicking!
+
+Graphing the automation over time, we can draw an image that shows the behavior of each rule. Each row of the image is the same row of cells, but the columns show how those cells change state over time. Some rules produce lines, pyramids, or even repeating geometric patterns like Sierpinski's triangle. But they exhibit some very unexpected behavior as well. Chaotic behavior, noise, and turbulence. Dynamic balances between chaos and order. True and unlimited complexity.
 
 When he first saw the turbulent chaos of rule 30, Wolfram was shocked. He only expected to find simple patterns produced by the simple 8 bit rules. Perhaps there was some error? But it was a simple matter to look up the rule and verify the pattern by hand. The 8 bit rule 30 truly does produce this turbulence.
 
