@@ -4,19 +4,39 @@ title: About
 permalink: /about/
 ---
 
-Hello! I am a Maryland based computer scientist, and this is a place where I plan to share the computer related art projects and other hacks that I have worked on.
+Hello! I am a Maryland based computer scientist and software engineer, and this space is currently in use as a directory of side projects for fun.
 
 
-### More Information
+### 729
 
-I think my interest in creative coding started as a amateur game tester. When I played games, I preferred to try to find the exploits in the game mechanics, and I was involved in the community investigating bugs and oddities in the Halo 1 and 2 games.
+729 is a puzzle game inspired by 2048. Originally web only, but now also in the google play store.
 
-Later I did this professionally for a time at Bethesda, working as a fulltime (and then some) QA tester, mostly on the game Skyrim.
+https://aeium.github.io/729/
+https://play.google.com/store/apps/details?id=com.aeium.puzzle_729
 
-I have always been more interested in the unfinished parts of the game vs the finished and polished parts. There is a sense of freedom and solitude and adventure in finding a way out of bounds into a place where the normal rules about what is possible and what is not can change.
+### Colorfall
 
-Writing code to generate images or sounds or videos, is sort of like a path to a great open space, a great skybox beyond the bounds of normal play, where anything is possible, if you work hard enough to reach it.
+Colorfall is a generative art project based on an original integer sequence published in OEIS.
 
-### Contact me
+https://aeium.github.io/colorfall
+https://oeis.org/A323179
 
-[nate2@umbc.edu](mailto:nate2@umbc.edu)
+### SpiralToy +
+
+Spiraltoy and the related projects are graphical art projects using javascript.
+
+https://aeium.github.io/spiralToy/
+https://aeium.github.io/spiralCommander/
+https://aeium.github.io/gimbalToy/
+
+### CoderColors
+
+GPU accelerated gradient explorer in browser
+
+https://aeium.github.io/coderColors
+
+### TensorFlow Automata
+
+GPU accelerated modular cellular automata exploration tool
+
+https://aeium.github.io/tensorFlowAutomata
